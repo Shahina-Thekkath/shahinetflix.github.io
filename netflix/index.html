@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="stylenet.css">
+</head>
+<body>
+    <div class="header">
+        <nav>
+            
+            <img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARQAAAC3CAMAAADkUVG/AAAAzFBMVEUAAADlCRXlChIAAwAAAAIABADnCBXPERbqCBXHDBfKDRjqCBEDAADjCRUAAgPSExq0DBsPBQWUChQAAAalChC1DRfXDRmtCw6qCxXiDxoRBAQAAwjaDRYACAAIBAGiDhN9CQ/wBxLjCh+FCQ0mCA2eCRW0FCF9FBW/Ex2NDhZqEBMxCQ5jCRKgDiJXERhyChcfCwg+Cw0pCAE7Bwm8DxVQCQwgBg2oChvcDxAsBxJLCg6UCBIwCA80DAlyDA+ACQthBxUhBgl8DBltFSJLOwyNAAAL2ElEQVR4nO2bi3bauBZAZct2BLIEwcHBmJfb0IaEdpImaTJkJk16//+f7tHDxhhDSge4d605e3WaicGytH10JMsqIQiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIMi/FU8SKT3ieauHpSRw0HwDPlwFDob6Tz1R6NWc5HmUqhNDeyUvL38dqT9YLz/083N3auKueCFUVFeWUFuJiEDtKaEkUq0PI5LSNYiMlM71D/SHaeiNUlVi5TilEgqkpPhaVGnz8iN1abiG+XUYWQkj3xbly8qp+4WSTydNxWdC7ZGZ/v3kUqZwJPRmrWaVVuOz+uZVo5bLa6W1fbJ22klzru72F/2t5qdTIiuVkbOm+cj8+jUv8FSaG+YN2+ZI64/hxjjdA6EfcxfIGmRkLuyPGeC6Sd+DI2E6zvg6z9CedJIFrAbnmwypP3DdyjkuFy9Q4PCS668N/KqTUJ5njHEWxEbRKGaBugK/st+kr/YSTzcHjRTinbiap1sbKX6P6QPxqepQ1Btzt4rgz+rMiSsAp0pyAfFFWmtnOW7wospvQ4FwXixHlapQ2WWqgKBlHNEOEy787ratlKjN4Vcm+Hjt3INIYW7H3jlaSCGbpDgmUmZ8gxQayo1SQi3FqZVCV6QQb5EE6oBIvpkDd4m6WuA6dx49aK61Uhy3OfRWpYRaSjReax10jCmEVTTjugmBcWF/OMGqFKc4KXBZESmOcN6NFCrlfaAiJWAzGCNHlE65uojIupQetvvIE90aESR3ZSmOiEOVU/zozNVtFUIHvb7JTjZVOkGKOWJhgelc0H20FBX5EIIqnIQuUlyBZyPFCWqkREpKIEQrP3DF1IncbY4ikHITM1WmYPODGilL4TOiY3KDlIDr/GhyZqYiRc64+pUxEyMCpOhviGtaSIEus8zAHCJlq5S0IgVSrQkxPpdQ5o+A68AZRIedpyylMN6Q3mYpQdLr9c7Pz87O4Gev+xOkpPPxozrYa+oSXN6bjjU3NlJU01vqLMUZ/Ow+bJciq1L8aaYClD215fDUjwU4dhz+mdLjSIFADx7U5GqDFPaBlKtiYsr8vzczPd/x7YdeWOQUPk6Lc+xUeLMUUo0Uz781eTwYXFD5NdPVdAff/eNJ4Y/bpcDTQORJKWUpeD2YWkadXEpR15IUGUp9jmdjfpuU6HxVCsTVpU69EB2ef2mSFCT5Q07cNEspbtxX1VyTYkaED5SsNUJVTlLPSHGcUzMtJ2UpZ2mlBTtJIfKFCT3inAxvnadAZ+67dHRoK7kUdTuuVINoT4+0NVJqqwKPdUaK65yuRwrbRQpdjxT5FrtMqCz+beboeOTd/bV9IyUp7N50nyNJoe9LUalWz00CPh4I05Me9tb0zSylwEX/hAm6leIYKdRKcT5sWCvw6AGlhDRaCK5nsTDf0f2oddgHZENJCmczGkbSSIHw1s+mtKfvlJJS+7wRjrxnxjdJ4eNooxS/mjBrIkXPuItQVnOWl301fBtlKe5gRHMpMA3XlZZKilBS1u6sqTT9XSn0l6TQzlNZSqu/r4ZvoyxFiAcYc/NISZdSVPehMM6oUTWSK+2ESOmwjd2HT2WkSVO7elJKtL8kRV4kTiFFZB1ZXSM8BKVEC6l2DDMRLQUG6FTP0KyU4EP/7eLiz7+Av7+X504mp4g6KWpAa7z8+PHjIzCbmEArpLRS+StSCO3ywD6KB05wXT3pIKxKSd4iupSi7m0eKdkgHgBJkjivZSkqUjYkWkc/UvFA4bIPuriylGrmrpUS+nOWS2HscRgeVYpK7gGbQPdhdVIEY1ApaJ7g8/VIWZNCjRRojmmQcBP/PSk1kze10C1PHJb38Ae9qHxwcilcP+y6l77M11Ngck6WUhzXrhGAlHKvrpfikXi5pKDPZjF5V0pa131CMuO2KNY8mIZVrBR3kOiWJXd0Nyn13WezFLJFSvUp2XKX2KL4JCVHwUph3a6r50iztMdLUmguRS9sKBy+ssazPVICvbakFi3d+N2cEslzvfpYlSLv7ZJO3D/CxE1f0UZKb6JdBE15lpmcYqSk58U6o00u/LV8/qZIMTklCZhVmX2w3YdulkLPQeJ6pNBLM3MKTo4UKLmUoPtd6CVVtsgT7aoUxvNXFtlr+fxNkWKXI5OBRTTsR+9JWY+URd59xEP1rciByLtPz2sYKZ0pL0uJzm3O+THJ+bt8/vZIyaayf9PXXNjJ245SQimn3I4+bHxcKbxHJuwJLu42z2ukwK/El7RmHXB7pLBeNeK35ZRaKenFIO/ALDnKJH/Zfdr0W/Kk2ibMgnNVyoDUv2rZHilq5a3y/V2l+LNidvnEftKjxEqRUyhtqNm6s1lKbX3eiZSzdSndnaR4fixE/mqJN+iB3w0aCimETvKJY72U+nu0RcqG9ZTdpMh5VlRKsGCRHlcKeUvE7lK2dJ+9SKH3WVErEbAx8Y/w8FOKFP3oUZJCVxNt/S0KqfdspJSy4K9JqfYskMJWpXhhutDvY139TAhTmOTmCCsHK1KusnwuDxag0mRVSn2ipdJIYf9YCqU9vipFhn6HqZU34QamauzlGJm2JIXQpCxFX/0XpOwtUtal0OhbYkYxZsYsJ2geY/xZSvGIbHNRlkJXpKhtbmGoFvVDf/neK8ojZVcpsY5E9XoNitXlUf0sCiUVUkbS7GyA2dOF4Hps5AvpHetlmEq0oT8vktq6FN+XoC1N6ZBKf1TcrojIqV6j3bX7xPPXxe3126mv9sJFqaekjLlZiM2/nNKWfgHmigm9NwtwvEOigw9A+QOhkiJHLbZRyt3i9erzrDPu3TfiZFacD5FipOwYKdAjOGOQOeNW87I77esNiWdVKS9mdu0O3uSVo9+KiUH/aK9NWVe9MPfGbFP34QOmdl6oP8zNnsvdZ8p+o/uoMtVWF3gshjLjfhEpTi4FshXViwauYFNJ+onKuK7Irg6/TKulQJv128h0zvgGKa5rd+HouzwtpHgg5XdGn2LRSt+S2JxrpIiT/KsPei6bBO6CwjhkjPH24acqK1Ko31qPFLZVisope5biGCl+BA/UustkPd8L5Z2tSHJ38FBZkQINrErRe0asFLUqr5oiss5K9wl0R0iW+U9J0SdlvbUG0C53ip1wOoUJwQYlKY6NFM+/TvTbdcYfUuhL/j30HyWlI4+yP6WIFHnLzONXLoXYHYsrwSJ4SYrvTQO1dYsHp8VEBgbuGJJPwILHYeV6p7SbqchyzasBKEy5KUkBvUZKKJ9tSm6ZPUJ/mMVj0aqWuXdWpYR+Q6xECvErUvTiYtYpzo9G3qTRuL+/7z6mpUTj/5z8nPz4OHv1K9cL/S9xPIgHSQL21U5iJcdKoWNWkuJ/f7Kz2J9qAjAanba4Xh1k82NEilt0H49M4MJC5fmWDvwwbUPyV4uQGdQ/gQG0cdkdT1+LeQpM51QVPbVTv+gpXqhdeJCFq+NnSPuk33/78/rudvEwv5p8hEG+3bh8Ux9F40wHQ6z/RUL60WzGdAZ9HYKS6B1wEKc9Gspj7KPlXR0XIb2DW8jVQ3rLvEsePiYnEAWdycv86/VFXw3cMJ/d262iMHNLo6F+BA/lYjJ77N43LiHUQEITboSAQJrm61sLs/XUjW/IYWNF2m3ouRRyD0+FQTI4aeubHEYw5VSLJlJN7dU/UFGzcrKvl5dUFSTJaKh2bHk0jWAwSyOq/znCt9m41xgMHOc2smMwvcz07CabeIeUQsNIbVV1eHauVzfgv9cvs6vFX31/SO0ToMotoXnw0X+FIMbbz1OZdqtMh2ovAfzQuqnd1kDTlJxeLx5oZCNFTjhXu9nFvaymqr1yKgfqtUUS56lT5l1jXw3/R6xWYXjxqRmroc5dHLRuo+hT+/nz4rqfp0kIhGO81/8tYPrj+zeLq+fufw56nVHqUwlBUdqJc5T3+r8F9KxQwszNG25YBvxX83/QsREEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQZD/Gf8FvO3yYoFjCLcAAAAASUVORK5CYII=">
+            <div>
+                <button class="language-btn">English<img src="image/down-icon.png"></button>
+                <button class="sign-in">Sign In</button>
+            </div>
+        </nav>
+        <div class="header-content">
+            <h1>Unlimited movies, TV shows and more</h1>
+            <h3>Watch anywhere. Cancel anytime.</h3>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+           <form class="email-signup">
+                <input type="email" placeholder="E mail address" required>
+                <button type="submit">Get Started</button>
+            </form>
+        </div>
+    </div>
+        
+    
+
+<div class="features" >
+    <div class="row">
+        <div class="text-col">
+            <h2>Enjoy on your TV</h2>
+            <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+        </div>
+        <div class="img-col">
+            <img src="image/feature-1.png">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="img-col">
+            <img src="image/feature-2.png">
+        </div>
+        <div class="text-col">
+            <h2>Download your shows to watch offline</h2>
+            <p>Save your favourites easily and always have something to watch.</p>
+        </div>
+    </div> 
+
+    <div class="row">
+        <div class="text-col">
+            <h2>Watch everywhere</h2>
+            <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+        </div>
+        <div class="img-col">
+            <img src="image/feature-3.png">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="img-col">
+            <img src="image/feature-4.png">
+        </div>
+        <div class="text-col">
+            <h2>Create profiles for kids</h2>
+            <p>Send children on adventures with their favourite characters in a space made just for them—free with your membership.</p>
+        </div>
+    </div> 
+</div>
+<div class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <ul class="accordian">
+        <li>
+            <input type="radio" name="accordian" id="first">
+            <label for="first">What is Netflex?</label>
+            <div class="content">
+                <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.<br>You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+            </div>
+
+        </li>
+
+            <li>
+                <input type="radio" name="accordian" id="second">
+                <label for="second">How much does Netflid cost?</label>
+                <div class="content">
+                    <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts.</p>
+                </div>
+            </li>
+
+            <li>
+                <input type="radio" name="accordian" id="third">
+                <label for="third">Where can I watch?</label>
+                <div class="content">
+                    <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.<br>You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <input type="radio" name="accordian" id="fourth">
+                <label for="fourth">How can I cancel?</label>
+                <div class="content">
+                    <p>Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees start or stop your account anytime.</p>
+                </div>
+            </li>
+
+            <li>
+                <input type="radio" name="accordian" id="fifth">
+                <label for="fifth">What can I watch on Netflix?</label>
+                <div class="content">
+                    <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+                </div>
+            </li>
+
+            <li>
+                <input type="radio" name="accordian" id="sixth">
+                <label for="sixth">Is Netflix good for kids?</label>
+                <div class="content">
+                    <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.
+                    </p>
+                </div>
+            </li>
+
+    </ul>
+    <small>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</small>
+    <form class="email-signup">
+        <input type="email" placeholder="E mail address" required>
+        <button type="submit">Get Started</button>
+    </form>
+</div> 
+
+</body>
+</html>
